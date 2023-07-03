@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,12 +21,16 @@
   }
   
   header .brand{
-    color: #f1f1f1;
+    color: #bebebe;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Goldman', cursive;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  header .brand p{
+    font-family: 'Rubik Microbe', cursive!important;
+    text-decoration-line: underline;
   }
   
   .brand:hover{

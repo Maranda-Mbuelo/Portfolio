@@ -52,6 +52,7 @@ section .navigation{
 
   section .navigation button{
     margin-left: 1rem;
+    padding: 0.7% 2.5% 0.7% 2.5%;
   }
 
   section .navigation:hover{

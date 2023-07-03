@@ -1,18 +1,17 @@
 <header class="myHeader">
-
-    <a href="" class="brand"><p>{{ time | date: 'shortTime' }}</p>
+    <a href="" class="brand">
+      <p>
+        {{ time | date: 'shortTime' }}
+      </p>
     </a>
-  
     <div class="menu-btn"><span> </span></div>
-  
     <div class="navigation">
       <div class="navigation-items">
         <button class="close" (click)="dismiss()"><i class="fa-solid fa-bars-sort"></i></button>
         <ng-container *ngFor="let link of myLinks">
-          <a href="{{link.link}}">{{link.name}}</a>
+          <a [href]="link.link">{{link.name}}</a>
         </ng-container>
       </div>
     </div>
-  
   </header>
   

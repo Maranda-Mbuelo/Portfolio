@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { environment } from 'src/environment/environment';
 import emailjs from '@emailjs/browser';
 
 @Component({
@@ -9,6 +10,7 @@ import emailjs from '@emailjs/browser';
 })
 export class MessageSectionComponent {
 
+  myImage: string = '/assets/images/nobgprofile.png';
   isLoading: boolean = false;
   form: FormGroup = this.formBuilder.group({
     from_name: '',
@@ -26,9 +28,9 @@ export class MessageSectionComponent {
   async send() {
     if (this.form) {
       this.isLoading = true;
-      emailjs.init('13mcOOGf_L5wOewqm');
+      emailjs.init(environment.emailjsApiKey);
       try {
-        await emailjs.send('service_5mrmudf', 'template_xow0yxg', {
+        await emailjs.send(environment.emailjsServiceId, environment.emailjsTemplateId, {
           from_name: this.form.value.from_name,
           to_name: this.form.value.to_name,
           from_email: this.form.value.from_email,

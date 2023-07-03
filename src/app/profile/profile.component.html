@@ -1,7 +1,7 @@
 <section class="darkClass">
     <div class="navigation" [ngClass]="{'hover-effect': hoverEffectEnabled}">
         <h1>Quick-Preview</h1>
-        <button routerLink="{{homepage}}">Skip</button>
+        <button routerLink="{{homepage}}">Home</button>
     </div>
     <button (click)="darkModeFunction()" class="modeChoser">
         <ng-container *ngIf="!isDarkMode"><i class="fa-solid fa-lightbulb fa-beat"></i></ng-container>

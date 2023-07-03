@@ -57,13 +57,14 @@ section{
   letter-spacing: 5px;
   line-height: 75px;
   margin-bottom: 40px;
+  text-decoration-line: underline;
 }
 
 .home .content h1 span{
   font-size: 2.3rem;
   font-weight: 600;
   text-shadow: 0.07rem 0.07rem 0.2rem black;
-
+  /* text-decoration-line: underline; */
 }
 
 .home .content p{
