@@ -1,0 +1,92 @@
+section {
+    width: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  section .blackPanel {
+    width: 100%;
+  }
+  
+  section .blackPanel .wrapper {
+    width: 100%;
+    color: rgb(26, 26, 59);
+    padding: 2%;
+  }
+  
+  section .blackPanel .wrapper h1 {
+    font-size: 2rem;
+    transition: 3s ease;
+  }
+  
+  section .blackPanel .wrapper p {
+    font-size: 130%;
+    padding: 1% 0 1% 2%;
+    transition: 3s ease;
+  }
+  
+  section .blackPanel .wrapper .miniWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5%;
+    padding: 4% 0 4% 0;
+  }
+  
+  section .blackPanel .wrapper .miniWrap .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    min-height: 33rem;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.466);
+    font-family: sans-serif;
+    color: rgb(26, 26, 59);
+    border-radius: 12px;
+    padding: 2%;
+    margin: 1%;
+    transition: 1.8s ease;
+  }
+
+  section .blackPanel .wrapper .miniWrap .card button img{
+    width: 100%;
+  }
+  
+  section .blackPanel .wrapper .miniWrap .card h2 {
+    color: rgb(26, 26, 59);
+    padding: 5%;
+  }
+  
+  section .blackPanel .wrapper .miniWrap .card p {
+    font-size: 120%;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: rgb(26, 26, 59);
+  }
+
+  .white-color{
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    section .blackPanel .wrapper .miniWrap {
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll;
+    }
+  
+    section .blackPanel .wrapper .miniWrap .card {
+      width: 80%;
+      margin-bottom: 12%;
+    }
+  
+    section .blackPanel .wrapper p {
+      padding: 4%;
+    }
+  }
+  

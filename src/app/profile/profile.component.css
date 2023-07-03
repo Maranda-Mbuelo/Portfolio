@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@100&display=swap');
+
+section{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    /* background: linear-gradient(to bottom right, #007bff, #007a87, #3b3e3f); */
+    background: #F5F5F5;
+    transition: 1.3s ease;
+    user-select: none;
+}
+
+section .navigation{
+    background-color: rgba(0, 0, 0, 0.473);
+    font-family: sans-serif;
+    position: absolute;
+    padding: 3%;
+    width: 3%;
+    border-radius: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s ease;
+    user-select: none;
+    -moz-user-select: none;
+    overflow: hidden;
+  }
+
+  .hover-effect{
+    width: 80%!important;
+    transition: width 2s ease;
+  }
+
+  section .modeChoser{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5%;
+    background-color: transparent;
+    color: black;
+    transform: scale(2);
+  }
+
+  .mode-choser-dark-mode{
+    color: white!important;
+  }
+
+  section .modeChoser:hover{
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  section .navigation button{
+    margin-left: 1rem;
+  }
+
+  section .navigation:hover{
+    width: 90%;
+  }
+
+section .blackPanel{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .wrapper{
+    background-color: transparent;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+section .wrapper .info, .icons{
+    width: 80%;
+    height: auto;
+    padding: 4%;
+    text-overflow: ellipsis;
+}
+
+.navigation, .info h1, .info h3, .info p{
+  font-family: 'Ysabeau Office', sans-serif;
+  font-weight: 600;
+  color: rgb(26, 26, 59);
+  user-select: none;
+}
+
+.dark-mode-background, .dark-mode{
+  transition: 1.3s ease;
+}
+
+.dark-mode-background{
+  background: rgb(0, 4, 39)!important;
+
+}
+
+.dark-mode {
+  color: white!important;
+}
+
+section .wrapper .info h1{
+    font-size: 4.2rem;
+    font-weight: 900;
+}
+
+section .wrapper .info h3{
+    font-size: 2.1rem
+}
+
+section .wrapper .info p{
+    font-size: 1.6rem;    
+}
+
+section .wrapper .info{
+    text-align: center;
+}
+
+section .wrapper .image{
+    background-color: blanchedalmond;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+section .wrapper .image img{
+    position: inherit;
+    width: 18rem;
+    height: max-content;
+    border-radius: 50%;
+    height: 18rem;
+}
+
+@media (max-width: 768px) {
+  .info{
+    width: 100%;
+  }
+
+  .info h1{
+    width: 100%;
+    text-overflow: ellipsis;
+  }
+
+  .blackPanel, section{
+    padding: 0;
+  }
+
+  section .wrapper{
+    transform: scale(0.7);
+    width: 100%;
+    height: auto;
+  }
+
+  section .navigation{
+    width: 20%;
+    z-index: 999;
+    display: none;
+  }
+}
+
+
+/* ScrollBar Code to hide it */
+
+
+
+::-webkit-scrollbar {
+    width: 0em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0);
+  }

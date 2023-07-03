@@ -1,0 +1,17 @@
+<div *ngIf="project" class="wrap">
+    <h1>{{ project.projectName }}<br>Development</h1>
+    <div class="timeline">
+      <div class="timeline-container">
+        <div *ngFor="let step of project.steps; let i = index" class="timeline-item">
+          <div class="timeline-year">Step {{ i + 1 }}</div>
+          <div class="timeline-line"></div>
+          <div class="timeline-content">
+            <p>{{ step }}</p>
+            <img *ngIf="isStringArray(project.projectImages)" [src]="project.projectImages[i]" alt="Step Image">
+            <img *ngIf="isAlternateImageStructure(project.projectImages)" [src]="project.projectImages[i].image1" alt="Step Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

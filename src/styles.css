@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Import Google Fonts */
+
+:root{
+    --midWhite: #b1b1b1;
+    --bmwColor: linear-gradient(to top right, #007bff, #007a87, #3b3e3f);
+  }
+
+button {
+    padding: 5px 15px 5px 15px;
+    background-color: #007bff;
+    color: var(--midWhite);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0069d9;
+    color: white;
+    text-shadow: 0px 0px 5px yellow;
+    box-shadow: 0.4rem 0.3rem 0.4rem #003c7c;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }

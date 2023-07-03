@@ -1,0 +1,16 @@
+<section>
+    <div class="wrapper">
+        <div class="bigImage">
+            <img [src]="initialImage" alt="Mbuelo" id="bigImage">
+            <a class="prev" (click)="previousButton()">&#10094;</a>
+            <a class="next" (click)="nextButton()">&#10095;</a>
+        </div>
+        <div class="smallImage">
+            <ng-container *ngFor="let x of myPictures.slice(0, 3); let i = index">
+              <div class="myImages" [class.selected]="i === selectedImageIndex" (click)="selectImage(i)">
+                <img [src]="x.path" alt="mbuelo">
+              </div>
+            </ng-container>
+          </div>    
+    </div>
+</section>

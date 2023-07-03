@@ -1,0 +1,24 @@
+<section class="darkClass">
+    <div class="navigation" [ngClass]="{'hover-effect': hoverEffectEnabled}">
+        <h1>Quick-Preview</h1>
+        <button routerLink="{{homepage}}">Skip</button>
+    </div>
+    <button (click)="darkModeFunction()" class="modeChoser">
+        <ng-container *ngIf="!isDarkMode"><i class="fa-solid fa-lightbulb fa-beat"></i></ng-container>
+        <ng-container *ngIf="isDarkMode"><i class="fa-solid fa-lightbulb fa-beat"></i></ng-container>
+      </button>
+    <div class="blackPanel">
+        <div class="wrapper">
+            <div class="info">
+                <h1 class="myInfo">{{name}}</h1>
+                <h3 class="myInfo">{{role}}</h3>
+                <p class="myInfo">{{story}}</p>
+            </div>
+            <div class="image">
+                <img [src]="myImage" alt="mbuelo">
+            </div>
+        </div>
+    </div>
+    <app-offers #offersComponent></app-offers>
+
+</section>

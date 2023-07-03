@@ -1,0 +1,19 @@
+<section>
+    <div class="blackPanel">
+        <div class="wrapper">
+            <h1>Services I Offer</h1>
+            <p>{{myParagraph1}}</p>
+            <p>{{myParagraph2}}</p>
+            <div class="miniWrap">
+                <ng-container *ngFor="let info of cardInfo">
+                    <div class="card">
+                        <!-- <img [src]="info.image" alt=""> -->
+                        <h2>{{info.name}}</h2>
+                        <p>{{info.display}}</p> 
+                    </div>
+                </ng-container> 
+            </div>
+        </div>
+    </div>
+</section>
+<app-portfolio #portFolio></app-portfolio>

@@ -1,0 +1,101 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #007bff, #007a87, #3b3e3f);
+    height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .bigImage {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .bigImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    /* Not sure if it'll work */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .smallImage {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .myImages {
+    flex: 0 0 30%;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .myImages:last-child {
+    margin-right: 0;
+  }
+  
+  .myImages.selected {
+    opacity: 1;
+  }
+  
+  .myImages img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .bigImage {
+      width: 90%;
+    }
+  
+    .myImages {
+      flex: 0 0 30%;
+      margin-right: 10px;
+    }
+  }
+  
+  

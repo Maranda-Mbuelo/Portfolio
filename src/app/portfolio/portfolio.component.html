@@ -1,0 +1,22 @@
+<section *ngIf="projects">
+    <div class="blackPanel">
+      <div class="wrapper">
+        <h1 [innerHTML]="'my portfolio' | titlecase"></h1>
+        <p [innerHTML]="myParagraph1"></p>
+        <div class="miniWrap">
+          <ng-container *ngFor="let project of projects">
+            <div class="card">
+                <h2 [innerHTML]="project.projectName"></h2>
+              <a [routerLink]="['/Mbuelo/Maranda', project.projectName]">
+                <button (click)="passProject(project.projectName)">
+                  <img [src]="getProjectImage(project)" alt="">
+                </button>
+              </a>
+              <p [innerHTML]="project.projectInformation"></p>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </section>
+  

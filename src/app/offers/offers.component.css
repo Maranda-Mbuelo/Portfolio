@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+section{
+    /* background: var(--bmwColor); */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section .blackPanel{
+    /* background-color: rgba(0, 0, 0, 0.473); */
+    width: 100%;
+    height: 100%;
+}
+
+section .blackPanel .wrapper{
+    width: 100%;
+    height: 100%;
+    color: var(--midWhite);
+}
+
+section .blackPanel .wrapper h1{
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(26, 26, 59);
+    padding: 2%;
+    font-size: 2rem;
+    transition: 3s ease;
+}
+
+section .blackPanel .wrapper p{
+    font-family: sans-serif;
+    color: rgb(26, 26, 59);
+    text-overflow: ellipsis;
+    font-size: 110%;
+    font-weight: 400;
+    padding: 1% 0 1% 2%;
+    transition: 3s ease;
+}
+
+section .blackPanel .wrapper .miniWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--midWhite); */
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+    padding: 4% 0 4% 0;
+}
+
+section .blackPanel .wrapper .miniWrap .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    height: 140%;
+    background-color: white;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.466);
+    font-family: sans-serif;
+    color: rgb(26, 26, 59);
+    border-radius: 12px;
+    padding: 2%;
+    margin: 1%;
+    transition: 1.8s ease;
+}
+
+section .blackPanel .wrapper .miniWrap .card img{
+    width: 55%;
+}
+
+.card-dark-mode{
+    background-color: rgba(14, 14, 14, 0.705)!important;
+}
+
+.white-color {
+    color: rgb(255, 255, 255)!important;
+    transition: 3s ease;
+  }
+  
+
+section .blackPanel .wrapper .miniWrap .card p{
+    font-size: 120%;
+    font-family: system-ui;
+    font-weight: 400;
+    color: rgb(26, 26, 59);
+}
+
+@media (max-width: 768px) {
+    section{
+        height: auto;
+    }
+    section .blackPanel .wrapper .miniWrap{
+        flex-direction: column;
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    section .blackPanel .wrapper .miniWrap .card{
+        width: 80%;
+        height: 100%;
+        margin-bottom: 12%;
+        padding: 5%;
+    }
+
+    section .blackPanel .wrapper p{
+        padding: 4%;
+    }
+}
